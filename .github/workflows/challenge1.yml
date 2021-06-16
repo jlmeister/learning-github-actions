@@ -12,7 +12,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Windows Date
-      run: date /t
+      run: date
   job3:
     runs-on: macos-latest
     steps:
