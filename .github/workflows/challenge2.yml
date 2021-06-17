@@ -3,7 +3,7 @@ name: challenge2
 on: push
 
 env:
-  ARTIFACT_NAME
+  ARTIFACT_NAME: artifact
 
 jobs:
   job1:
@@ -13,3 +13,6 @@ jobs:
       uses: actions/checkout@v2
     - name: artifact upload
       uses: actions/upload-artifact@v2
+      with:
+        name: artifact
+        path: ./${{ env.ARTIFACT_NAME }}
